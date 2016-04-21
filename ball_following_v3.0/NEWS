@@ -1,0 +1,5 @@
+v3.0
+1) Fixed nao joints representation [fixer.py DELETED].
+2) Added ability to track a ball with two cameras at once.
+3) Added ability to create raw data for training set with two cameras at once.
+4) Added ability to create training set from raw data which was collected with two cameras.

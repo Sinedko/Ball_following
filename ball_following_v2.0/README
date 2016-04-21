@@ -1,0 +1,33 @@
+Title: Ball Following Using Backpropagation
+Author of v1.0: Mislav Mandarić
+Author of v2.0: Denis Vereš
+
+Main folder consist of:
+Classes.py --- Containing all classes that encapsulates NaoQi ALProxy (ALMemory, ALMotion, ALVideoDevice, ALRobotPosture, AlTextToSpeech)
+
+backprop-1H.c --- Denis Vereš neural network optimalized only for running the script. It uses image.txt file for getting image data as inputs and weights.txt file for getting values of weights of neural network. Returns joints values through standard output.
+
+run.py --- Module that is used for running the application. It creates text file image.txt where data for picture values is saved.
+Usage:
+run.py IP PORT
+
+Train folder consist of:
+Classes.py --- Containing all classes that encapsulates NaoQi ALProxy (ALMemory, ALMotion, ALVideoDevice, ALRobotPosture, AlTextToSpeech) 
+
+backprop-1H.c --- Denis Vereš neural network optimalized for training. It reads trainingData.txt file and saves weights of the neural network in weights.txt text file.
+
+createTrain.py --- Module that is used for collecting raw training data. It saves data in two files (angles.dat and img.png).
+Usage:
+createTrain.py IP PORT
+
+processer.py --- Module that is used for preprocess raw data into good format for neural network. It saves training set as file named trainingData.txt.
+Usage:
+processer.py
+
+deleter.py --- Module that deletes all items in raw folder.
+Usage:
+deleter.py
+
+fixer.py --- Module that rewrite bad format of angles in angles.dat files.
+Usage:
+fixer.py

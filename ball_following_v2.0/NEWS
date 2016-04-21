@@ -1,0 +1,9 @@
+v2.0
+1) Created new file Classes.py that cointains merged codes from MMVision.py, MMMemory.py, MMMotion.py and coding.py.
+2) Added classes for encapsulate ALPosture and ALTextToSpeech proxies.
+3) Added new neural network implementation (author: Denis Vereš).
+4) Added function that allows tracking a ball with external camera.
+5) New script (createTrain.py) for create a raw data for training set.
+6) New script (processer.py) for preprocess raw data into training set.
+7) New script (fixer.py) that fixes bad format of angles in angles.dat files.
+8) New training set (author: Denis Vereš).
